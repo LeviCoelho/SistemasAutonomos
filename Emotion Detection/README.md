@@ -44,9 +44,6 @@ The repository is currently compatible with `tensorflow-2.0` and makes use of th
 
 * The emotion with maximum score is displayed on the screen.
 
-## Example Output
-
-![Mutiface](multiface.png)
 
 ## References
 
@@ -55,3 +52,5 @@ The repository is currently compatible with `tensorflow-2.0` and makes use of th
    X Wang, D Athanasakis, J Shawe-Taylor, M Milakov, J Park, R Ionescu,
    M Popescu, C Grozea, J Bergstra, J Xie, L Romaszko, B Xu, Z Chuang, and
    Y. Bengio. arXiv 2013.
+*modified from:https://github.com/atulapra/Emotion-detection   
+
