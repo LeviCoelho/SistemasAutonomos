@@ -1,6 +1,6 @@
 function setup() {
-    createCanvas(400, 400);
-    background(220);
+    createCanvas(500, 500);
+    background(0);
 
     var m1 = new Matrix(2, 2);
     var m2 = new Matrix(2, 2);
