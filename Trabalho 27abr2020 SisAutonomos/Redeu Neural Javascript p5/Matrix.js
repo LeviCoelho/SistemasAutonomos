@@ -100,12 +100,12 @@ class Matrix {
 
     static add(A, B) {
         var matrix = new Matrix(A.rows, A.cols);
-        console.log(A.data);
-        console.log(B.data);
+        //console.log(A.data);
+        //console.log(B.data);
         matrix.map((num, i, j) => {
             return A.data[i][j] + B.data[i][j]
         });
-        console.log(matrix.data);
+        //console.log(matrix.data);
         return matrix;
     }
 
