@@ -47,7 +47,7 @@ class RedeNeural {
         hidden.map(sigmoid)
 
         // HIDDEN -> OUTPUT
-        // d(Sigmoid) = Output * (1- Output)
+        // d(Sigmoid) = Output * (1- Output) //Derivada Sigmoid
         let output = Matrix.multiply(this.weigths_ho, hidden);
         output = Matrix.add(output, this.bias_ho);
         output.map(sigmoid);

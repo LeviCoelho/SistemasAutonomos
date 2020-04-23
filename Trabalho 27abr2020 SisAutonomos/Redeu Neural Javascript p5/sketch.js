@@ -23,11 +23,14 @@ function setup() {
 
 function draw() {
     if (train) {
-        for (var i = 0; i < 10000; i++) {
+        epochs = 10000;
+        for (var i = 0; i < epochs; i++) {
             var index = floor(random(4));
             nn.train(dataset.inputs[index], dataset.outputs[index]);
         }
-        if (nn.predict([0, 0])[0] < 0.04 && nn.predict([1, 0])[0] > 0.98) {
+        erroMinimo = 0.04;
+        erroMaximo = 0.98;
+        if (nn.predict([0, 0])[0] < erroMinimo && nn.predict([1, 0])[0] > erroMaximo) {//teste da rede neural
             train = false;
             console.log("terminou");
         }
